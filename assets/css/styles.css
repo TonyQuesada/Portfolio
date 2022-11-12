@@ -895,10 +895,6 @@ img {
   margin-bottom: var(--mb-2);
 }
 
-.contact__division {
-  display: inline;
-}
-
 .contact__icon {
   font-size: 2rem;
   color: var(--first-color);
