@@ -896,8 +896,7 @@ img {
 }
 
 .contact__division {
-  margin: 5px;
-  grid-template-columns: repeat(3, 1fr);
+  display: inline;
 }
 
 .contact__icon {
@@ -1295,7 +1294,7 @@ img {
   }
   
   .contact__division {
-    margin: 5px;
+    margin: 3px;
     grid-template-columns: repeat(3, 1fr);
   }
 
