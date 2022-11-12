@@ -1341,4 +1341,8 @@ img {
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
   }
+  .contact__division {
+    margin: 3px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
