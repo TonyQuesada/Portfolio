@@ -263,6 +263,14 @@ img {
   color: var(--first-color-alt);
 }
 
+.name-icon {
+  /* color: var(--first-color);
+  font-size: calc(var(--h2-font-size) + 4px); */
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+}
+
 /* show menu */
 .show-menu {
   bottom: 0;
