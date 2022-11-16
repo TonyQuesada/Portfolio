@@ -15,6 +15,17 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <!--==================== THREE JS ====================-->        
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://unpkg.com/three@0.127.0/build/three.module.js",
+                    "OrbitControls": "https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js",
+                    "GLTFLoader": "https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader.js"
+                }
+            }
+        </script>
+
         <title>Portfolio - Anthony Quesada</title>
     </head>
     <body>
@@ -94,6 +105,7 @@
                             </a>
                         </div>
 
+                    <!--
                         <div class="home__img">
                             <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <mask id="mask0" mask-type="alpha">
@@ -113,6 +125,10 @@
                                 </g>
                             </svg>                            
                         </div>
+                    -->
+                    
+                        <canvas id="home__img" class="webgl"></canvas>
+                        <script type="module" src="assets/js/modelo_3d.js"></script>
 
                         <div class="home__data">
                             <h1 class="home__title">Hi, I'm Anthony</h1>
@@ -987,5 +1003,6 @@
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+
     </body>
 </html>
