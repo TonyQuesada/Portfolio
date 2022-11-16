@@ -1,9 +1,4 @@
-// import * as THREE from '../../three.js-master/build/three.module.js'
-/*
-import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js'
-import { GLTFLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader.js'
-import { OrbitControls } from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js'
-*/
+
 
 import * as THREE from 'three';
 import { GLTFLoader } from 'GLTFLoader';
@@ -15,7 +10,6 @@ var root;
 
 const loader = new GLTFLoader();
 loader.load('../../assets/3D/perfil.glb', function (gltf) {
-    // console.log(gltf)
     root = gltf.scene;
     root.scale.set(20, 20, 20);
     root.position.set(0, -0.15, 0);
@@ -57,8 +51,6 @@ const renderer = new THREE.WebGL1Renderer({
 
 renderer.setSize(canvas.clientWidth, canvas.clientHeight);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-renderer.shadowMap.enabled = true;
-renderer.gammaOuput = true;
 renderer.outputEncoding = THREE.sRGBEncoding; // set color encoding
 
 function animate() {
