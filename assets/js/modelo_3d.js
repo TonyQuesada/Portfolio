@@ -43,6 +43,10 @@ const controls = new OrbitControls(camera, canvas);
 controls.enableZoom = false;
 controls.autoRotate = true;
 controls.autoRotateSpeed = 8;
+controls.mouseButtons = {
+	LEFT: THREE.MOUSE.ROTATE,
+	MIDDLE: THREE.MOUSE.DOLLY
+};
 
 /*==================== RENDERER CONFIGURATION ====================*/ 
 const renderer = new THREE.WebGL1Renderer({
