@@ -46,6 +46,9 @@ controls.autoRotateSpeed = 8;
 controls.mouseButtons = {
 	LEFT: THREE.MOUSE.ROTATE
 };
+controls.touches = {
+	ONE: THREE.TOUCH.ROTATE
+};
 
 /*==================== RENDERER CONFIGURATION ====================*/ 
 const renderer = new THREE.WebGL1Renderer({
