@@ -6,15 +6,14 @@ import { OrbitControls } from 'OrbitControls';
 /*==================== CREATE SCENE ====================*/ 
 const canvas = document.querySelector('.webgl');
 const scene = new THREE.Scene();
-var root;
 
 /*==================== LOAD THE FILE GLTF/GLB ====================*/ 
 const loader = new GLTFLoader();
 loader.load('../../assets/3D/perfil.glb', function (gltf) {
-    root = gltf.scene;
+    const root = gltf.scene;
     root.scale.set(20, 20, 20);
     root.position.set(0, -0.15, 0);
-    scene.add(root);    
+    scene.add(root);
 }, function (xhr) {
     console.log((xhr.loader / xhr.total * 100) + "% loaded");
 }, function (error) {
@@ -41,6 +40,9 @@ scene.add(camera);
 
 /*==================== CONTROLS CONFIGURATION ====================*/ 
 const controls = new OrbitControls(camera, canvas);
+controls.enableZoom = false;
+controls.autoRotate = true;
+controls.autoRotateSpeed = 8;
 
 /*==================== RENDERER CONFIGURATION ====================*/ 
 const renderer = new THREE.WebGL1Renderer({
@@ -54,7 +56,7 @@ renderer.outputEncoding = THREE.sRGBEncoding; // Set color encoding
 /*==================== PRINCIPAL FUNCTION ====================*/ 
 function animate() {
     requestAnimationFrame(animate);
-    root.rotation.y += 0.013;
+    // root.rotation.y += 0.013;
     renderer.render(scene, camera);
     controls.update();
     controls.enableDamping = true;
