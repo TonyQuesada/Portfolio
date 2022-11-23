@@ -44,8 +44,7 @@ controls.enableZoom = false;
 controls.autoRotate = true;
 controls.autoRotateSpeed = 8;
 controls.mouseButtons = {
-	LEFT: THREE.MOUSE.ROTATE,
-	MIDDLE: THREE.MOUSE.DOLLY
+	LEFT: THREE.MOUSE.ROTATE
 };
 
 /*==================== RENDERER CONFIGURATION ====================*/ 
