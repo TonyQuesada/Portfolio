@@ -75,9 +75,16 @@
                 </ul>
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
-            
+
             <!-- Botons for music -->
             <div class="nav__music">
+
+                <!-- <iframe src="silence.mp3" allow="autoplay" id="audio" hidden></iframe> -->
+                <!-- <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none;"></iframe> -->
+                <audio id="player" autoplay>
+                    <source src="/assets/music/song.mp3" type="audio/mp3">
+                </audio>
+
                 <div class=" nav__link" id="play">
                     <i class="uil uil-music-tune-slash" id="playBtn"></i>
                 </div>

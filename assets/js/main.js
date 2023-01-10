@@ -194,8 +194,8 @@ themeButton.addEventListener('click', () => {
 /*==================== MUSIC ====================*/
 var btnplay = document.getElementById("play");
 var btnpause = document.getElementById("pause");
+var sound = document.getElementById("player");
 
-let sound = new Audio('/assets/music/song.mp3');
 sound.autoplay = true;
 sound.loop = true;
 sound.volume = 0.015;

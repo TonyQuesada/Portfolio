@@ -42,7 +42,7 @@ scene.add(camera);
 const controls = new OrbitControls(camera, canvas);
 controls.enableZoom = false;
 controls.autoRotate = true;
-controls.autoRotateSpeed = 8;
+controls.autoRotateSpeed = 6;
 controls.mouseButtons = {
 	LEFT: THREE.MOUSE.ROTATE
 };
