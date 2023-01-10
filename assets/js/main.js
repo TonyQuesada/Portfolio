@@ -196,7 +196,9 @@ var btnplay = document.getElementById("play");
 var btnpause = document.getElementById("pause");
 var sound = document.getElementById("player");
 
-sound.autoplay = true;
+sound.muted = true;
+sound.play();
+sound.muted = false;
 sound.loop = true;
 sound.volume = 0.015;
 
