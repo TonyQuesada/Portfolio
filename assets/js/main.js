@@ -196,18 +196,15 @@ var btnplay = document.getElementById("play");
 var btnpause = document.getElementById("pause");
 var sound = document.getElementById("player");
 
-sound.muted = true;
-sound.play();
-sound.muted = false;
 sound.loop = true;
 sound.volume = 0.015;
 
 if (sound.play) {
-    btnplay.style.display = "none";
-    btnpause.style.display = "block";
-} else {
     btnpause.style.display = "none";
     btnplay.style.display = "block";
+} else {
+    btnplay.style.display = "none";
+    btnpause.style.display = "block";
 }
 
 playBtn.addEventListener('click', () => {
