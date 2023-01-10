@@ -585,10 +585,17 @@ img {
 .skills__open .skills__list {
   height: max-content;
   margin-bottom: var(--mb-2-5);
+  animation: 350ms ease desplegar 1;
 }
 
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
+}
+
+@keyframes desplegar {
+  from {
+    transform: scale(0);
+  }
 }
 
 /*==================== QUALIFICATION ====================*/
