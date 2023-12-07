@@ -1270,9 +1270,9 @@ img {
   .about__description {
     text-align: initial;
   }
-  .about__info {
+  /* .about__info {
     justify-content: space-between;
-  }
+  } */
   .about__buttons {
     justify-content: initial;
   }
