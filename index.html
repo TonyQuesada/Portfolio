@@ -9,6 +9,7 @@
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
 
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -18,14 +19,14 @@
 
     <!--==================== THREE JS ====================-->
     <script type="importmap">
-            {
-                "imports": {
-                    "three": "https://unpkg.com/three@0.127.0/build/three.module.js",
-                    "OrbitControls": "https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js",
-                    "GLTFLoader": "https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader.js"
-                }
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.127.0/build/three.module.js",
+                "OrbitControls": "https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js",
+                "GLTFLoader": "https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader.js"
             }
-        </script>
+        }
+    </script>
 
     <title>Portfolio - Anthony Quesada</title>
 </head>
@@ -56,11 +57,11 @@
                             <i class="uil uil-file-alt nav__icon"></i> Skills
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <!-- <li class="nav__item">
                         <a href="#services" class="nav__link">
                             <i class="uil uil-briefcase-alt nav__icon"></i> Services
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav__item">
                         <a href="#portfolio" class="nav__link">
                             <i class="uil uil-scenery nav__icon"></i> Portfolio
@@ -175,12 +176,15 @@
                 <img src="assets/img/about.webp" alt="" class="about__img">
 
                 <div class="about__data">
-                    <p class="about__description">Web developer, with extensive knowledge, working in web technologies,
-                        delivering quality work.</p>
+                    <p class="about__description" style="text-align: justify;">
+                        I am passionate about continuous learning, my ability to transform ideas into efficient 
+                        solutions and my practical approach add value to each project. I enjoy every phase of 
+                        development, prioritizing quality and innovation.
+                    </p>
 
                     <div class="about__info">
                         <div>
-                            <span class="about__info-title">02</span>
+                            <span class="about__info-title">+02</span>
                             <span class="about__info-name">Years <br> experience</span>
                         </div>
 
@@ -190,7 +194,7 @@
                         </div> -->
 
                         <div>
-                            <span class="about__info-title">02</span>
+                            <span class="about__info-title">+02</span>
                             <span class="about__info-name">Companies <br> worked</span>
                         </div>
                     </div>
@@ -216,172 +220,313 @@
             <span class="section__subtitle">My technical skills</span>
 
             <div class="skills__container container grid">
-                <div>
-                    <!--==================== SKILLS 1 ====================-->
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
+                <!--==================== SKILLS 1 ====================-->
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
 
-                            <div>
-                                <h1 class="skills__title">Frontend developer</h1>
-                                <span class="skills__subtitle">More than 2 years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                        <div>
+                            <h1 class="skills__title">Frontend developer</h1>
+                            <!-- <span class="skills__subtitle">More than 2 years</span> -->
                         </div>
 
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">HTML</h3>
-                                    <i class='bx bxl-html5 bx-flashing skills__icon_little'></i>
-                                </div>
-                                <!-- <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
-                                    </div> -->
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">CSS</h3>
-                                    <i class='bx bxl-css3 bx-flashing skills__icon_little'></i>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript</h3>
-                                    <i class='bx bxl-javascript bx-flashing skills__icon_little'></i>
-                                </div>
-                            </div>
-
-                            <!-- <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">React</h3>
-                                        <i class='bx bxl-react bx-flashing skills__icon_little'></i>
-                                    </div>
-                                </div> -->
-                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
                     </div>
 
-                    <!--==================== SKILLS 2 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-swatchbook skills__icon"></i>
+                    <div class="skills__list grid">
 
-                            <div>
-                                <h1 class="skills__title">Designer</h1>
-                                <span class="skills__subtitle">Less than 1 year</span>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
+                                <i class='bx bxl-html5 bx-flashing skills__icon_little'></i>
                             </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
 
-                        <div class="skills__list grid">
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Photoshop</h3>
-                                    <i class='bx bxs-palette bx-flashing skills__icon_little'></i>
-                                </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">CSS</h3>
+                                <i class='bx bxl-css3 bx-flashing skills__icon_little'></i>
                             </div>
-
                         </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Bootstrap</h3>                                
+                                <i class='bx-flashing skills__icon_little'>
+                                    <span class="iconify" data-icon="simple-icons:bootstrap" data-inline="false"></span>
+                                </i>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <div>
-                    <!--==================== SKILLS 3 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class='bx bx-code-alt skills__icon'></i>
-                            <!-- <i class="uil uil-server-network skills__icon"></i> -->
+                <!--==================== SKILLS 2 ====================-->
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class='bx bx-code-alt skills__icon'></i>
+                        <!-- <i class="uil uil-server-network skills__icon"></i> -->
 
-                            <div>
-                                <h1 class="skills__title">Backend developer</h1>
-                                <span class="skills__subtitle">More than 2 years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                        <div>
+                            <h1 class="skills__title">Backend developer</h1>
+                            <!-- <span class="skills__subtitle">More than 2 years</span> -->
                         </div>
 
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">C#</h3>
-                                    <i class='bx bxl-c-plus-plus bx-flashing skills__icon_little'></i>
-                                </div>
-                            </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">PHP</h3>
-                                    <i class='bx bxl-php bx-flashing skills__icon_little'></i>
-                                </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">C#</h3>
+                                <i class='bx bxl-c-plus-plus bx-flashing skills__icon_little'></i>
                             </div>
+                        </div>
 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Node Js (in learning)</h3>
-                                    <i class='bx bxl-nodejs bx-flashing skills__icon_little'></i>
-                                </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JavaScript</h3>
+                                <i class='bx bxl-javascript bx-flashing skills__icon_little'></i>
                             </div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Node Js </h3>
+                                <i class='bx bxl-nodejs bx-flashing skills__icon_little'></i>
+                            </div>
+                        </div>
 
-                            <!-- <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Python</h3>
-                                        <i class='bx bxl-python bx-flashing skills__icon_little'></i>
-                                    </div>
-                                </div> -->
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Express</h3>                       
+                                <i class='bx-flashing skills__icon_little'>
+                                    <span class="iconify" data-icon="simple-icons:express" data-inline="false"></span>
+                                </i>
+                            </div>
+                        </div>
+
+                        <!-- <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <i class='bx bxl-python bx-flashing skills__icon_little'></i>
+                                </div>
+                            </div> -->
+                    </div>
+
+                </div>
+
+                <!--==================== SKILLS 3 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil uil-database skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Database</h1>
+                            <!-- <span class="skills__subtitle">More than 2 years</span> -->
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">SQL Server</h3>
+                                <i class='bx bxs-data bx-flashing skills__icon_little'></i>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">MongoDB</h3>
+                                <i class='bx bxl-mongodb bx-flashing skills__icon_little'></i>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">MySQL</h3>                   
+                                <i class='bx-flashing skills__icon_little'>
+                                    <span class="iconify" data-icon="simple-icons:mysql" data-inline="false"></span>
+                                </i>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+
+                <!--==================== SKILLS 4 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-folder-open skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Version control system</h1>
+                            <!-- <span class="skills__subtitle">Less than 1 year</span> -->
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">GIT</h3>
+                                <i class='bx bxl-git bx-flashing skills__icon_little'></i>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">GitHub</h3>
+                                <i class='bx bxl-github bx-flashing skills__icon_little'></i>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">BitBucket</h3>
+                                <i class='bx-flashing skills__icon_little'>
+                                    <span class="iconify" data-icon="simple-icons:bitbucket" data-inline="false"></span>
+                                </i>                  
+                            </div>
                         </div>
 
                     </div>
+                </div>
 
-                    <!--==================== SKILLS 4 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil uil-database skills__icon"></i>
+                <!--==================== SKILLS 5 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class='uil uil-layer-group skills__icon'></i>
 
-                            <div>
-                                <h1 class="skills__title">Database</h1>
-                                <span class="skills__subtitle">More than 2 years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                        <div>
+                            <h1 class="skills__title">Software</h1>
+                            <!-- <span class="skills__subtitle">More than 2 years</span> -->
                         </div>
 
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">SQL Server</h3>
-                                    <i class='bx bxs-data bx-flashing skills__icon_little'></i>
-                                </div>
-                            </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">MySQL</h3>
-                                    <i class='bx bx-data bx-flashing skills__icon_little'></i>
-                                </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Visual Studio</h3>
+                                <i class='bx bxl-visual-studio bx-flashing skills__icon_little'></i>
                             </div>
+                        </div>
 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">MariaDB</h3>
-                                    <i class='bx bx-detail bx-flashing skills__icon_little'></i>
-                                </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Visual Studio Code</h3>
+                                <i class='bx bxl-visual-studio bx-flashing skills__icon_little'></i>
                             </div>
+                        </div>
 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">mongoDB (in learning)</h3>
-                                    <i class='bx bxl-mongodb bx-flashing skills__icon_little'></i>
-                                </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Postman</h3>
+                                <i class='bx-flashing skills__icon_little'>
+                                    <span class="iconify" data-icon="simple-icons:postman" data-inline="false"></span>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Figma</h3>
+                                <i class='bx bxl-figma bx-flashing skills__icon_little'></i>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Adobe Photoshop</h3>
+                                <i class='bx-flashing skills__icon_little'>
+                                    <span class="iconify" data-icon="simple-icons:adobephotoshop" data-inline="false"></span>
+                                </i>          
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Trello</h3>
+                                <i class='bx bxl-trello bx-flashing skills__icon_little'></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--==================== SKILLS 6 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil uil-sort-amount-up skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Learning</h1>
+                            <!-- <span class="skills__subtitle">More than 2 years</span> -->
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">React</h3>
+                                <i class='bx bxl-react bx-flashing skills__icon_little'></i>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">MongoDB</h3>
+                                <i class='bx bxl-mongodb bx-flashing skills__icon_little'></i>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Express</h3>                   
+                                <i class='bx-flashing skills__icon_little'>
+                                    <span class="iconify" data-icon="simple-icons:express" data-inline="false"></span>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Angular</h3>
+                                <i class='bx bxl-angular bx-flashing skills__icon_little'></i>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Node</h3>
+                                <i class='bx bxl-nodejs bx-flashing skills__icon_little'></i>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">PHP</h3>
+                                <i class='bx bxl-php bx-flashing skills__icon_little'></i>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Laravel</h3>                   
+                                <i class='bx-flashing skills__icon_little'>
+                                    <span class="iconify" data-icon="simple-icons:laravel" data-inline="false"></span>
+                                </i>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -539,124 +684,6 @@
             </div>
         </section>
 
-        <!--==================== SERVICES ====================-->
-        <section class="services section" id="services">
-            <h2 class="section__title">Service</h2>
-            <span class="section__subtitle">What i offer</span>
-
-            <div class="services__container container grid">
-                <!--==================== SERVICES 1 ====================-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-web-grid services__icon"></i>
-                        <h3 class="services__title">Web <br> Developer</h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Web <br> Developer</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop the user interface.</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Web page development.</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I position your company brand.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== SERVICES 2 ====================-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-arrow services__icon"></i>
-                        <h3 class="services__title">Backend <br> Developer</h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Backend <br> Developer</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop the user interface.</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Web page development.</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I position your company brand.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--==================== SERVICES 3 ====================-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-database services__icon"></i>
-                        <h3 class="services__title">Database <br> Administrator</h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Database <br> Administrator</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop the user interface.</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Web page development.</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I position your company brand.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portfolio</h2>
@@ -672,10 +699,18 @@
 
                         <div class="portfolio__data">
                             <a href="https://explorix-now.netlify.app" target="_blank">
-                                <h3 class="portfolio__title">Modern Website</h3>
+                                <h3 class="portfolio__title">
+                                    <span class="title-wrapper">
+                                        <i class='bx bxl-react bx-flashing skills__icon_little'></i>
+                                        &nbsp; Destinos Irreales
+                                    </span>
+                                </h3>
                             </a>
-                            <p class="portfolio__description">Website adaptable to all devices, with user interface
-                                components.</p>
+                            <p class="portfolio__description">
+                                Explore breathtaking destinations with our React-powered website. 
+                                Fully responsive and equipped with modern UI components for a 
+                                seamless experience on any device.
+                            </p>
                             <a href="https://explorix-now.netlify.app" target="_blank"
                                 class="button button--flex button--small portfolio__button">
                                 Demo
@@ -854,13 +889,14 @@
                 <div class="contact__division grid">
                     <div class="contact__information">
 
-                        <a class="fab fa-whatsapp contact__subtitle" href="https://wa.me/+50661903211/" target="_blank">
-                            <i class="uil uil-whatsapp contact__icon"></i>
+                        <a class="fab fa-whatsapp contact__subtitle" href="https://www.linkedin.com/in/anthony-joel-quesada-brenes/" target="_blank">
+                            <i class="uil uil-linkedin contact__icon"></i>
                         </a>
-                        <a class="fab fa-whatsapp contact__subtitle" href="https://wa.me/+50661903211/" target="_blank">
+                        <!-- <a class="fab fa-whatsapp contact__subtitle" href="https://wa.me/+50661903211/" target="_blank"> -->
+                        <a class="fab fa-whatsapp contact__subtitle" href="https://www.linkedin.com/in/anthony-joel-quesada-brenes/" target="_blank">
                             <div>
-                                <h3 class="contact__title">Call Me</h3>
-                                <span class="contact__subtitle">+506 6190-3211</span>
+                                <h3 class="contact__title">LinkedIn</h3>
+                                <span class="contact__subtitle">Anthony Quesada</span>
                             </div>
                         </a>
                     </div>
@@ -929,7 +965,7 @@
 
                 <ul class="footer__links">
                     <li>
-                        <a href="#services" class="footer__link">Services</a>
+                        <a href="#skills" class="footer__link">Skills</a>
                     </li>
                     <li>
                         <a href="#portfolio" class="footer__link">Portfolio</a>

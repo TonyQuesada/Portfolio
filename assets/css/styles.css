@@ -33,6 +33,7 @@
   --h1-font-size     : 1.5rem;
   --h2-font-size     : 1.25rem;
   --h3-font-size     : 1.125rem;
+  --h5-font-size     : 0.90rem;
   --normal-font-size : .938rem;
   --small-font-size  : .813rem;
   --smaller-font-size: .75rem;
@@ -791,6 +792,7 @@ img {
 
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
+  font-size: var(--h5-font-size);
 }
 
 .portfolio__button:hover .button__icon {
@@ -1029,6 +1031,12 @@ img {
 .show-scroll {
   bottom: 5rem;
 }
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 
 /*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar {
