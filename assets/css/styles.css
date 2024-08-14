@@ -407,6 +407,10 @@ img {
   padding: 0.75rem 1rem;
 }
 
+.button--smaller {
+  padding: 0.25rem 0.50rem;
+}
+
 .button--link {
   padding: 0;
   background-color: transparent;
@@ -1311,6 +1315,7 @@ img {
 
   .portfolio__img {
     width: 320px;
+    height: 213px;
   }
   .portfolio__content {
     align-items: center;
