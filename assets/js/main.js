@@ -96,6 +96,10 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     cssMode: true,
     loop: true,
 
+    autoplay: {
+        delay: 2000, // Tiempo entre diapositivas (en milisegundos)
+        disableOnInteraction: false, // Permitir que el usuario controle el carrusel manualmente
+    },      
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -105,7 +109,7 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
         clickable: true
     },
 });
-
+  
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
     loop: true,
@@ -218,3 +222,4 @@ pauseBtn.addEventListener('click', () => {
     btnpause.style.display = "none";
     btnplay.style.display = "block";
 })
+
