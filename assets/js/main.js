@@ -97,7 +97,7 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     loop: true,
 
     autoplay: {
-        delay: 2000, // Tiempo entre diapositivas (en milisegundos)
+        delay: 4000, // Tiempo entre diapositivas (en milisegundos)
         disableOnInteraction: false, // Permitir que el usuario controle el carrusel manualmente
     },      
     navigation: {
