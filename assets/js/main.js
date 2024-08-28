@@ -97,7 +97,7 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     loop: true,
 
     autoplay: {
-        delay: 4000, // Tiempo entre diapositivas (en milisegundos)
+        delay: 2000, // Tiempo entre diapositivas (en milisegundos)
         disableOnInteraction: false, // Permitir que el usuario controle el carrusel manualmente
     },      
     navigation: {
@@ -109,6 +109,32 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
         clickable: true
     },
 });
+
+// Detener el autoplay cuando el mouse esté sobre el carrusel
+document.querySelector('.portfolio__container').addEventListener('mouseenter', () => {
+    swiperPortfolio.autoplay.stop();
+});
+
+// Reanudar el autoplay cuando el mouse salga del carrusel
+document.querySelector('.portfolio__container').addEventListener('mouseleave', () => {
+    swiperPortfolio.autoplay.start();
+});
+
+// Detener el autoplay temporalmente cuando se hace clic en los botones de navegación
+document.querySelector('.swiper-button-next').addEventListener('click', () => {
+    swiperPortfolio.autoplay.stop();
+    setTimeout(() => {
+        swiperPortfolio.autoplay.start();
+    }, 2000); // El mismo delay que el autoplay
+});
+
+document.querySelector('.swiper-button-prev').addEventListener('click', () => {
+    swiperPortfolio.autoplay.stop();
+    setTimeout(() => {
+        swiperPortfolio.autoplay.start();
+    }, 2000); // El mismo delay que el autoplay
+});
+
   
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
